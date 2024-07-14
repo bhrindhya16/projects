@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_I40OAOPnEeyjwLi2YgxFag" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OAePnEeyjwLi2YgxFag" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OAuPnEeyjwLi2YgxFag" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OA-PnEeyjwLi2YgxFag" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OBOPnEeyjwLi2YgxFag" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OBePnEeyjwLi2YgxFag" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OBuPnEeyjwLi2YgxFag" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_I40OB-PnEeyjwLi2YgxFag" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OCOPnEeyjwLi2YgxFag" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OCePnEeyjwLi2YgxFag" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OCuPnEeyjwLi2YgxFag" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OC-PnEeyjwLi2YgxFag" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edl"/>
+    <contextParameter comment="" internalId="_I40ODOPnEeyjwLi2YgxFag" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sbdt"/>
+    <contextParameter comment="" internalId="_I40ODePnEeyjwLi2YgxFag" name="PRISM_Port" prompt="PRISM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="443"/>
+    <contextParameter comment="" internalId="_I40ODuPnEeyjwLi2YgxFag" name="PRISM_Server" prompt="PRISM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uai3045015-prism-baffle-dev-NLB-0e144d3e434fe0d3.elb.us-east-1.amazonaws.com"/>
+    <contextParameter comment="" internalId="_I40OD-PnEeyjwLi2YgxFag" name="PRISM_Schema" prompt="PRISM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism"/>
+    <contextParameter comment="" internalId="_I40OEOPnEeyjwLi2YgxFag" name="PRISM_Login" prompt="PRISM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism_admin"/>
+    <contextParameter comment="" internalId="_I40OEePnEeyjwLi2YgxFag" name="PRISM_Password" prompt="PRISM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:rgrzFCuePT29uUhNm/lePSZeYaqe66iGNHX30Xy40o16CyUVZkIcIx5M"/>
+    <contextParameter comment="" internalId="_I40OEuPnEeyjwLi2YgxFag" name="PRISM_Database" prompt="PRISM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism"/>
+    <contextParameter comment="" internalId="_I40OE-PnEeyjwLi2YgxFag" name="Source_Table_Name" prompt="Source_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OFOPnEeyjwLi2YgxFag" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OFePnEeyjwLi2YgxFag" name="Target_Table_Name" prompt="Target_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_I40OFuPnEeyjwLi2YgxFag" name="PRISM_Port" prompt="PRISM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="2483"/>
+    <contextParameter comment="" internalId="_I40OF-PnEeyjwLi2YgxFag" name="PRISM_Server" prompt="PRISM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uai3045015-prism-baffle-dev-NLB-0e144d3e434fe0d3.elb.us-east-1.amazonaws.com"/>
+    <contextParameter comment="" internalId="_I40OGOPnEeyjwLi2YgxFag" name="PRISM_Schema" prompt="PRISM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism"/>
+    <contextParameter comment="" internalId="_I40OGePnEeyjwLi2YgxFag" name="PRISM_Login" prompt="PRISM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism_admin"/>
+    <contextParameter comment="" internalId="_I40OGuPnEeyjwLi2YgxFag" name="PRISM_Password" prompt="PRISM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:oTwUa1d3hPwJKWpPcrDvplPtN7kssPv74DoUW2axNAlQ3vbRePcPhAx9"/>
+    <contextParameter comment="" internalId="_I40OG-PnEeyjwLi2YgxFag" name="PRISM_Database" prompt="PRISM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism"/>
+    <contextParameter comment="" internalId="_I40OHOPnEeyjwLi2YgxFag" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_I40OHePnEeyjwLi2YgxFag" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OHuPnEeyjwLi2YgxFag" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OH-PnEeyjwLi2YgxFag" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OIOPnEeyjwLi2YgxFag" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OIePnEeyjwLi2YgxFag" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OIuPnEeyjwLi2YgxFag" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OI-PnEeyjwLi2YgxFag" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OJOPnEeyjwLi2YgxFag" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OJePnEeyjwLi2YgxFag" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OJuPnEeyjwLi2YgxFag" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OJ-PnEeyjwLi2YgxFag" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sbdt"/>
+    <contextParameter comment="" internalId="_I40OKOPnEeyjwLi2YgxFag" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edl"/>
+    <contextParameter comment="" internalId="_I40OKePnEeyjwLi2YgxFag" name="Source_Table_Name" prompt="Source_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OKuPnEeyjwLi2YgxFag" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OK-PnEeyjwLi2YgxFag" name="Target_Table_Name" prompt="Target_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" internalId="_I40OLOPnEeyjwLi2YgxFag" name="PRISM_Port" prompt="PRISM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="2483"/>
+    <contextParameter comment="" internalId="_I40OLePnEeyjwLi2YgxFag" name="PRISM_Server" prompt="PRISM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="pwpgd-prismdb.caoyo2ualeea.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_I40OLuPnEeyjwLi2YgxFag" name="PRISM_Schema" prompt="PRISM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism"/>
+    <contextParameter comment="" internalId="_I40OL-PnEeyjwLi2YgxFag" name="PRISM_Login" prompt="PRISM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prism_admin"/>
+    <contextParameter comment="" internalId="_I40OMOPnEeyjwLi2YgxFag" name="PRISM_Password" prompt="PRISM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cjmnJKRnNJMJDaN4qvO2Y6AJIGefHUcbA6QGaEIw0lriP0n9uNUqU+oK"/>
+    <contextParameter comment="" internalId="_I40OMePnEeyjwLi2YgxFag" name="PRISM_Database" prompt="PRISM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter comment="" internalId="_I40OMuPnEeyjwLi2YgxFag" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_I40OM-PnEeyjwLi2YgxFag" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40ONOPnEeyjwLi2YgxFag" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40ONePnEeyjwLi2YgxFag" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40ONuPnEeyjwLi2YgxFag" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40ON-PnEeyjwLi2YgxFag" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OOOPnEeyjwLi2YgxFag" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OOePnEeyjwLi2YgxFag" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OOuPnEeyjwLi2YgxFag" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OO-PnEeyjwLi2YgxFag" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_I40OPOPnEeyjwLi2YgxFag" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OPePnEeyjwLi2YgxFag" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sbdt"/>
+    <contextParameter comment="" internalId="_I40OPuPnEeyjwLi2YgxFag" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edl"/>
+    <contextParameter comment="" internalId="_I40OP-PnEeyjwLi2YgxFag" name="Source_Table_Name" prompt="Source_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OQOPnEeyjwLi2YgxFag" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_I40OQePnEeyjwLi2YgxFag" name="Target_Table_Name" prompt="Target_Table_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/1508368/Talend-Studio-7.2.1/Talend-Studio-7.2.1/workspace risk onprem dev/in.csv&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:N3UbA+ysg9KZjDicGsrXRIgsgwFrQyO0CTYp4lAG"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/talend/qa/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tPostgresqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;talend-logdb-postgres10.c4sspcqw0zjf.us-east-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;talendlogs?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;prodlogs&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;504004192&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rUKBCtxmDT3kjKOJzfbCNTBPllGE/HqRkJlp/qpbXpIE+c6BwLGVYUmG4TWMbwO8yZFBesGmOPLPAEL0ncHqBh39ywrIxoVP6aCHYjh3tgaJebm2XkHx7PnCepeo2QH1+A=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;talend_flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_50sDcMeKEeynmOflDXM1gQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_51PdEMeKEeynmOflDXM1gQ" name="SQLike"/>
+    <routinesParameter id="_52v48MeKEeynmOflDXM1gQ" name="TalendStringUtil"/>
+    <routinesParameter id="_52bI0MeKEeynmOflDXM1gQ" name="TalendDate"/>
+    <routinesParameter id="_50f2MMeKEeynmOflDXM1gQ" name="DataQuality"/>
+    <routinesParameter id="_52k50MeKEeynmOflDXM1gQ" name="TalendString"/>
+    <routinesParameter id="_506F4MeKEeynmOflDXM1gQ" name="DqStringHandling"/>
+    <routinesParameter id="_510E0MeKEeynmOflDXM1gQ" name="Numeric"/>
+    <routinesParameter id="_5uYAEMeKEeynmOflDXM1gQ" name="DataMasking"/>
+    <routinesParameter id="_51acMMeKEeynmOflDXM1gQ" name="DataOperation"/>
+    <routinesParameter id="_51lbUMeKEeynmOflDXM1gQ" name="Mathematical"/>
+    <routinesParameter id="_51FFAMeKEeynmOflDXM1gQ" name="DQTechnical"/>
+    <routinesParameter id="_52GYsMeKEeynmOflDXM1gQ" name="StringHandling"/>
+    <routinesParameter id="_52PioMeKEeynmOflDXM1gQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_51910MeKEeynmOflDXM1gQ" name="Relational"/>
+    <routinesParameter id="_s2lZMB6uEeq2Nr_CgBCDIQ" name="getFSSOPassword"/>
+  </parameters>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.PRISM_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.PRISM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.PRISM_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PRISM_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.PRISM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1TnSJ7Rhaexm7lO30gZrkAmbQsPZVFqwWFiYnWwSTJNe0SaPUYDpU37Ds16HAKzvyes="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;EncryptionMethod=SSL;ApplicationName=&quot;+projectName+&quot;-&quot;+jobName+&quot;-&quot;+currentComponent+&quot;;&amp;ssl=true&amp;ApplicationName=&quot;+projectName+&quot;-&quot;+jobName+&quot;-&quot;+currentComponent"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="PRISM"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/data/shared/PW_SERVICES_RISK_ONPREM/PRISM/Termination_Data.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ERFd3Y/Xub8aLfnYhUIkJtibsS30v4mn9PAhxcm2"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false">
+      <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
+      <elementValue elementRef="USE_REGEX" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_9TyDgH3SEeuSYtLFFPte_w - metadata"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Model_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EOT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sunset"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_the_contract_include_Termination_Window_for_Convenience_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_CV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_CV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__CV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_CV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_the_contract_include_Termination_Window_for_Non_Competitiveness_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_NC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_NC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__NC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_NC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_include_Termination_Window_for_Economic_Hardship_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_EH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_EH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__EH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_EH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_AS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_AS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_there_a_Remedy_for_this_Provision__AS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_AS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_include_Termination_Window_for_Performance_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__PP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_PP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site_Name"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Model_ID"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EOT"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sunset"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_the_contract_include_Termination_Window_for_Convenience_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_CV"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_CV"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__CV"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_CV"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_the_contract_include_Termination_Window_for_Non_Competitiveness_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_NC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_NC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__NC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_NC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_include_Termination_Window_for_Economic_Hardship_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_EH"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_EH"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__EH"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_EH"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_Start_Date_AS"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICAM_End_Date_AS"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_there_a_Remedy_for_this_Provision__AS"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_AS"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Does_this_contract_include_Termination_Window_for_Performance_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Is_Remedy_applicable_to_this_Provision__PP"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Termination_Amount_PP"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="true"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="termination_data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
+      <column comment="" key="false" length="56" name="Site_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Model_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="EOT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="Sunset" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_the_contract_include_Termination_Window_for_Convenience_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Termination_Amount_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_the_contract_include_Termination_Window_for_Non_Competitiveness_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Is_Remedy_applicable_to_this_Provision__NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Termination_Amount_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_this_contract_include_Termination_Window_for_Economic_Hardship_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Termination_Amount_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_Start_Date_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_End_Date_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_there_a_Remedy_for_this_Provision__AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Termination_Amount_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_this_contract_include_Termination_Window_for_Performance_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__PP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Termination_Amount_PP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="56" name="Site_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Model_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="EOT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="Sunset" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_the_contract_include_Termination_Window_for_Convenience_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Termination_Amount_CV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_the_contract_include_Termination_Window_for_Non_Competitiveness_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Is_Remedy_applicable_to_this_Provision__NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Termination_Amount_NC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_this_contract_include_Termination_Window_for_Economic_Hardship_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Termination_Amount_EH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_Start_Date_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_End_Date_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_there_a_Remedy_for_this_Provision__AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Termination_Amount_AS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Does_this_contract_include_Termination_Window_for_Performance_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Is_Remedy_applicable_to_this_Provision__PP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Termination_Amount_PP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_AHdwsIcWEeuKTNtGjmmOhw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="out1">
+      <column comment="" key="false" length="100" name="site_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="model_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="eot" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="sunset" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="convenience_flag" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_cv_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_cv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="non_competitive_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_nc_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_nc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="economic_hard_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_eh_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="termination_amount_eh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ownership_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_start_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_end_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="termination_amount_as" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="performance_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_pp_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="termination_amount_pp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="28" name="EOT" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="Sunset" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_CV" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_CV" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_NC" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_NC" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_Start_Date_EH" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="ICAM_End_Date_EH" nullable="true" pattern=" &quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_Start_Date_AS" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ICAM_End_Date_AS" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.Site_Name" name="site_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Model_ID" name="model_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.EOT!=null &amp;&amp; !&quot;&quot;.equals(row1.EOT) ? (row1.EOT.equals(&quot;48305&quot;)?TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) :&#13;&#10;(row1.EOT.contains(&quot;/&quot;) || row1.EOT.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.EOT ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.EOT)):null &#13;&#10;" name="eot" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Sunset!=null &amp;&amp; !&quot;&quot;.equals(row1.Sunset) ? &#13;&#10;((row1.Sunset.contains(&quot;/&quot;) || row1.Sunset.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.Sunset ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.Sunset)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )" name="sunset" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Does_the_contract_include_Termination_Window_for_Convenience_ " name="convenience_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_CV!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_CV) ?&#13;&#10;((row1.ICAM_Start_Date_CV.contains(&quot;/&quot;) || row1.ICAM_Start_Date_CV.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_CV ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_CV)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )&#13;&#10;" name="icam_start_date_cv" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_CV!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_CV) ?&#13;&#10;((row1.ICAM_End_Date_CV.contains(&quot;-&quot;) || row1.ICAM_End_Date_CV.contains(&quot;/&quot;))?TalendDate.parseDate( &quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_CV ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_CV)):TalendDate.parseDate( &quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) " name="icam_end_date_cv" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Is_Remedy_applicable_to_this_Provision__CV " name="remedy_cv_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Termination_Amount_CV " name="termination_amount_cv" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Does_the_contract_include_Termination_Window_for_Non_Competitiveness_ " name="non_competitive_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_NC!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_NC) ? &#13;&#10;((row1.ICAM_Start_Date_NC.contains(&quot;/&quot;) || row1.ICAM_Start_Date_NC.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_NC ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_NC)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )&#13;&#10;" name="icam_start_date_nc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_NC!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_NC) ?&#13;&#10;((row1.ICAM_End_Date_NC.contains(&quot;/&quot;) || row1.ICAM_End_Date_NC.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_NC ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_NC) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )" name="icam_end_date_nc" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Is_Remedy_applicable_to_this_Provision__NC " name="remedy_nc_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Termination_Amount_NC " name="termination_amount_nc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Does_this_contract_include_Termination_Window_for_Economic_Hardship_ " name="economic_hard_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_EH!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_EH) ?&#13;&#10;((row1.ICAM_Start_Date_EH.contains(&quot;/&quot;) || row1.ICAM_Start_Date_EH.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_EH ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_EH) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) &#13;&#10;" name="icam_start_date_eh" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_EH!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_EH) ?&#13;&#10;((row1.ICAM_End_Date_EH.contains(&quot;/&quot;) || row1.ICAM_End_Date_EH.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_EH ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_EH) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )" name="icam_end_date_eh" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Is_Remedy_applicable_to_this_Provision__EH " name="remedy_eh_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Termination_Amount_EH " name="termination_amount_eh" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale " name="ownership_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_AS!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_AS) ?&#13;&#10;((row1.ICAM_Start_Date_AS.contains(&quot;/&quot;) || row1.ICAM_Start_Date_AS.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_AS ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_AS)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) " name="icam_start_date_as" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_AS!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_AS) ? &#13;&#10;((row1.ICAM_End_Date_AS.contains(&quot;/&quot;) || row1.ICAM_End_Date_AS.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_AS ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_AS))&#13;&#10;:(Relational.ISNULL(row1.ICAM_End_Date_AS) || row1.ICAM_End_Date_AS.equals(&quot;EOT&quot;) ) ?TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) :null" name="icam_end_date_as" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Termination_Amount_AS " name="termination_amount_as" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Does_this_contract_include_Termination_Window_for_Performance_ " name="performance_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Is_Remedy_applicable_to_this_Provision__PP " name="remedy_pp_flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Termination_Amount_PP " name="termination_amount_pp" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.EOT!=null &amp;&amp; !&quot;&quot;.equals(row1.EOT) ? (row1.EOT.equals(&quot;48305&quot;)?TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) :&#13;&#10;(row1.EOT.contains(&quot;/&quot;) || row1.EOT.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.EOT ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.EOT)):null &#13;&#10;" name="EOT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Sunset!=null &amp;&amp; !&quot;&quot;.equals(row1.Sunset) ? &#13;&#10;((row1.Sunset.contains(&quot;/&quot;) || row1.Sunset.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.Sunset ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.Sunset)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )&#13;&#10;&#13;&#10;" name="Sunset" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_CV!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_CV) ?&#13;&#10;((row1.ICAM_Start_Date_CV.contains(&quot;/&quot;) || row1.ICAM_Start_Date_CV.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_CV ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_CV)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )&#13;&#10;" name="ICAM_Start_Date_CV" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_CV!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_CV) ?&#13;&#10;((row1.ICAM_End_Date_CV.contains(&quot;-&quot;) || row1.ICAM_End_Date_CV.contains(&quot;/&quot;))?TalendDate.parseDate( &quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_CV ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_CV)):TalendDate.parseDate( &quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) " name="ICAM_End_Date_CV" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_NC!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_NC) ? &#13;&#10;((row1.ICAM_Start_Date_NC.contains(&quot;/&quot;) || row1.ICAM_Start_Date_NC.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_NC ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_NC)):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )&#13;&#10;" name="ICAM_Start_Date_NC" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_NC!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_NC) ?&#13;&#10;((row1.ICAM_End_Date_NC.contains(&quot;/&quot;) || row1.ICAM_End_Date_NC.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_NC ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_NC) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )" name="ICAM_End_Date_NC" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_EH!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_Start_Date_EH) ?&#13;&#10;((row1.ICAM_Start_Date_EH.contains(&quot;/&quot;) || row1.ICAM_Start_Date_EH.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_Start_Date_EH ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_Start_Date_EH) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; ) &#13;&#10;" name="ICAM_Start_Date_EH" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_EH!=null &amp;&amp; !&quot;&quot;.equals(row1.ICAM_End_Date_EH) ?&#13;&#10;((row1.ICAM_End_Date_EH.contains(&quot;/&quot;) || row1.ICAM_End_Date_EH.contains(&quot;-&quot;))?TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.ICAM_End_Date_EH ):TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;,row1.ICAM_End_Date_EH) ):TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/1800&quot; )" name="ICAM_End_Date_EH" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ICAM_Start_Date_AS" name="ICAM_Start_Date_AS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ICAM_End_Date_AS" name="ICAM_End_Date_AS" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Site_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Model_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="EOT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Sunset" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Does_the_contract_include_Termination_Window_for_Convenience_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_Start_Date_CV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_End_Date_CV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Remedy_applicable_to_this_Provision__CV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Termination_Amount_CV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Does_the_contract_include_Termination_Window_for_Non_Competitiveness_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_Start_Date_NC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_End_Date_NC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Remedy_applicable_to_this_Provision__NC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Termination_Amount_NC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Does_this_contract_include_Termination_Window_for_Economic_Hardship_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_Start_Date_EH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_End_Date_EH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Remedy_applicable_to_this_Provision__EH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Termination_Amount_EH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Does_this_contract_inlcude_Termination_for_Change_in_Ownership___Asset_Sale" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_Start_Date_AS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ICAM_End_Date_AS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_there_a_Remedy_for_this_Provision__AS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Termination_Amount_AS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Does_this_contract_include_Termination_Window_for_Performance_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Remedy_applicable_to_this_Provision__PP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Termination_Amount_PP" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+NSQjO0tIUJTK4gF0KlpenVHhzLtOpO/85ygN/ct"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;pp_app_termination_data_stg&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;EncryptionMethod=SSL;ApplicationName=&quot;+projectName+&quot;-&quot;+jobName+&quot;-&quot;+currentComponent+&quot;;&amp;ssl=true&amp;ApplicationName=&quot;+projectName+&quot;-&quot;+jobName+&quot;-&quot;+currentComponent"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="site_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="model_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eot"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sunset"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="convenience_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_start_date_cv"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_end_date_cv"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remedy_cv_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termination_amount_cv"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="non_competitive_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_start_date_nc"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_end_date_nc"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remedy_nc_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termination_amount_nc"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="economic_hard_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_start_date_eh"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_end_date_eh"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remedy_eh_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termination_amount_eh"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ownership_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_start_date_as"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="icam_end_date_as"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termination_amount_as"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="performance_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remedy_pp_flag"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termination_amount_pp"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tDBOutput_1">
+      <column comment="" key="false" length="100" name="site_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="model_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="eot" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="sunset" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="convenience_flag" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_cv_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_cv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="non_competitive_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_nc_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_nc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="economic_hard_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_eh_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="termination_amount_eh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ownership_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_start_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_end_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="termination_amount_as" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="performance_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_pp_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="termination_amount_pp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="100" name="site_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="model_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="eot" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="sunset" nullable="true" originalLength="-1" pattern="'yyyy-MM-dd'" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="convenience_flag" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_cv" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_cv_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_cv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="non_competitive_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_nc" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="remedy_nc_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termination_amount_nc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="economic_hard_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_start_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="icam_end_date_eh" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_eh_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="termination_amount_eh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ownership_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_start_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="icam_end_date_as" nullable="true" pattern="'yyyy-MM-dd'" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="termination_amount_as" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="performance_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="remedy_pp_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="termination_amount_pp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileInputExcel_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b911f376-b15c-486b-afb0-25ccca0c171d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ch0zN1/xNI2Dfw2Y3amhxKruRrzyJg7vkyPce5H9fTG49re3PGbfNbrqzfoVkxt6KlM/o8dSheKk
+KielHUFcYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_80f83ef9-c4ed-42ca-96da-19e135fc01bf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>N/n6KkjHeIboFWFJOx+yFD5D78FswIrje1++aG0zUbP6j1ILhWPMGCg59vWG5mOfFsJc126wCk80
+0Mcz57VCGA==</DigestValue></Reference></SignedInfo><SignatureValue>WDT9jt1wnP69otr7S0HvH0orJ6nk3QklrMPujkotFkfmO2izfeQW1kLGMNqwoxUnD/bZbbDxm+oX
+a1HWZ+V81lTj9NnqRoUJQQweK2bp2/eZQucjC9GPDCKiPUHRED4nleyzt+1PSZgyVdEnaDZij6RK
+SjFKy/pwK1DKaFOAtuUr1eLP5IYX0JVyP7f2BF93Qp1ecRc0caeofEnFI7o6QY6oWfcNAQ6bLl/W
+hS4//x6VzUhGTwhBx0B+vdIQoHNlP27XKVwSC3EgcvRpPONDh+dsK5otDGnQiAs1WEeNP5GeHLvk
+QtKq5zxRtHgd8FWwZ8Zkt/cuEp6LX0cbhCiPWg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_80f83ef9-c4ed-42ca-96da-19e135fc01bf" Target="#_b911f376-b15c-486b-afb0-25ccca0c171d"><Timestamp>2022-09-23 07:06:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
